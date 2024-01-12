@@ -30,8 +30,8 @@
                     <td>{{ $item['email'] }}</td>
                     <td>{{ $item['role'] }}</td>
                     <td class="d-flex justify-content-center">
-                        <a href="{{ route('userg.edit', $item['id']) }}" class="btn btn-primary me-3">Edit</a>
-                        <form action="#" method="POST">
+                        <a href="{{ route('user.edit', $item['id']) }}" class="btn btn-primary me-3">Edit</a>
+                        <form action="{{route('user.delete', $item['id'])}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger">Hapus</button> 

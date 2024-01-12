@@ -1,7 +1,7 @@
 @extends('layout.template')
 
 @section('content')
-    <form action="{{ route('userg.update', $userg['id']) }}" method="POST" class="card p-5">
+    <form action="{{ route('userg.update', $user['id']) }}" method="POST" class="card p-5">
         @csrf
         @method('PATCH')
 
@@ -16,19 +16,19 @@
         <div class="mb-3 row">
             <label for="name" class="col-sm-2 col-form-label">Nama :</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name" value="{{ $userg['name'] }}">
+                <input type="text" class="form-control" id="name" name="name" value="{{ $user['name'] }}">
             </div>
         </div>
         <div class="mb-3 row">
             <label for="name" class="col-sm-2 col-form-label">Email :</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="email" name="email" value="{{ $userg['email'] }}">
+                <input type="text" class="form-control" id="email" name="email" value="{{ $user['email'] }}">
             </div>
         </div>
         <div class="mb-3 row">
             <label for="name" class="col-sm-2 col-form-label">Ubah Password :</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" id="password" name="password" value="{{ $userg['password'] }}">
+                <input type="password" class="form-control" id="password" name="password" value="{{ $user['password'] }}">
             </div>
         </div>
 

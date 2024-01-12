@@ -68,7 +68,7 @@ class usergController extends Controller
     {
         $users = User::find($id);
 
-        return view('userg.edit', compact('userg'));
+        return view('userg.edit', compact('user'));
     }
 
     /**
